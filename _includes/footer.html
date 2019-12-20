@@ -13,16 +13,6 @@
                             </span>
                         </a>
                     </li>
-                    {% if site.twitter_username %}
-                    <li>
-                        <a href="https://twitter.com/{{ site.twitter_username }}">
-                            <span class="fa-stack fa-lg">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                            </span>
-                        </a>
-                    </li>
-                    {% endif %}
 
                     {% if site.github_username %}
                     <li>
@@ -34,7 +24,7 @@
                         </a>
                     </li>
                     {% endif %}
-                    
+
                     <!--
                     {% if site.douban_username %}
                     <li>
@@ -48,7 +38,7 @@
                     {% endif %}
                     -->
 
-  
+
 
                     {% if site.zhihu_username %}
                     <li>
@@ -64,9 +54,12 @@
 
                 </ul>
                 <p class="copyright text-muted">
-                &copy; 2018-{{ site.time | date: '%Y' }} {{ site.owner.name }} 版权所有 ❖ 皖ICP备18021966号-1
-                   
+                &copy; 2018-{{ site.time | date: '%Y' }} {{ site.owner.name }} 版权所有 
                 </p>
+                <p class="copyright text-muted" href="www.beian.miit.gov.cn">
+                    ❖ 皖ICP备18021966号-1
+                </p>
+
             </div>
         </div>
     </div>
